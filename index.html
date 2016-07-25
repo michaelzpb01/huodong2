@@ -50,7 +50,7 @@ footer img{ width:4.04rem; height:0.4rem; position:absolute; bottom:0.34rem; lef
 
 .page4 div:nth-child(3) img{ width:3.39rem; height:0.64rem; margin-top:0.44rem; }
 .page4 div:nth-child(4) img{ width:4.74rem; height:4.05rem; margin-top:0.44rem; }
-.attention-us{ margin-top:0.3rem; }
+.attention-us{ margin-top:0.3rem; position:relative; }
 .attention-us img{ width:3.58rem; height:1.41rem; }
 .page5 .pageTitle{ margin-bottom:0.5rem; }
 
@@ -172,6 +172,7 @@ footer img{ width:4.04rem; height:0.4rem; position:absolute; bottom:0.34rem; lef
 		-webkit-animation-duration: 1.6s !important;
     	animation-duration: 1.6s !important;
 	}
+	.code{ width:64px !important; height:64px !important; position: absolute; left: 50%; top: 0.16rem; margin-left: 0.4rem; }
 </style>
 <link rel="stylesheet" href="css/animate.min.css">
 <script src="js/swiper.min.js"></script>
@@ -227,9 +228,18 @@ footer img{ width:4.04rem; height:0.4rem; position:absolute; bottom:0.34rem; lef
         <div class="swiper-slide page5">
 			<div style="display:block"><img src="img/logo.png" ></div>
         	<div class="pageTitle page5-animate-01"><img src="img/page05-img00.png" ></div>
-        	<div class="attention-us page5-animate-02"><img src="img/page05-img01.png" alt=""></div>
-        	<div class="attention-us page5-animate-03"><img src="img/page05-img02.png" alt=""></div>
-        	<div class="attention-us page5-animate-04"><img src="img/page05-img03.png" alt=""></div>
+        	<div class="attention-us page5-animate-02">
+        		<img src="img/page05-img01.png" alt="">
+        		<img src="img/code1.png" alt="" class="code"/>
+        	</div>
+        	<div class="attention-us page5-animate-03">
+        		<img src="img/page05-img02.png" alt="">
+        		<img src="img/code2.png" alt=""  class="code"/>
+        	</div>
+        	<div class="attention-us page5-animate-04">
+        		<img src="img/page05-img03.png" alt="">
+        		<img src="img/code2.png" alt=""  class="code"/>
+        	</div>
         	<footer><img src="img/teamwork.png" ></footer>
         </div>
     </div>
@@ -246,21 +256,6 @@ footer img{ width:4.04rem; height:0.4rem; position:absolute; bottom:0.34rem; lef
 <script src="js/index.js"></script>
 </body>
 </html>
-<script>
-	function share (title, desc ) {
-	    weiXin.ready(function () {
-	      WeixinJSBridge.on('menu:share:timeline', function () {
-	        WeixinJSBridge.invoke('shareTimeline', {
-	          "title": title,
-	          "desc": desc
-	        }, function( res ) {
-	          _report('share', res.err_msg);
-	        });
-	      });
-	    });
-	  }
-	share ("实业为本 基业长青", "诚邀您出席INK（银客）集团战略升级暨C轮融资发布会，共同见证INK新时代" )
-</script>
 
 
 
