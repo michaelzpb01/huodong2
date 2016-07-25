@@ -6,11 +6,25 @@
 <meta name="copyright" content="银客集团" />
 <meta name="description" content="银客集团" />
 
-
+<meta name="MobileOptimized" content="320">
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- UC应用模式 -->
+<meta name="browsermode" content="application">
+<!-- QQ应用模式 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
 <!-- 网页不会被缓存 -->
 <!--<meta http-equiv="Pragma" content="no-cache">-->
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
-<meta name="description" content="诚邀您出席INK（银客）集团战略升级暨C轮融资发布会，共同见证INK新时代">
+<meta http-equiv="description" content="诚邀您出席INK（银客）集团战略升级暨C轮融资发布会，共同见证INK新时代">
 <title>实业为本 基业长青</title>
 <style>
 *{margin:0; padding:0;}
@@ -232,7 +246,21 @@ footer img{ width:4.04rem; height:0.4rem; position:absolute; bottom:0.34rem; lef
 <script src="js/index.js"></script>
 </body>
 </html>
-
+<script>
+	function share (title, desc ) {
+	    weiXin.ready(function () {
+	      WeixinJSBridge.on('menu:share:timeline', function () {
+	        WeixinJSBridge.invoke('shareTimeline', {
+	          "title": title,
+	          "desc": desc
+	        }, function( res ) {
+	          _report('share', res.err_msg);
+	        });
+	      });
+	    });
+	  }
+	share ("实业为本 基业长青", "诚邀您出席INK（银客）集团战略升级暨C轮融资发布会，共同见证INK新时代" )
+</script>
 
 
 
