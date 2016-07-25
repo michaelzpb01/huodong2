@@ -1,0 +1,21 @@
+/*common
+*@description   all css
+*@author jane
+*@date 2016.7.20
+*/
+*{margin:0;padding:0;}
+html{font-family:'微软雅黑',Helvetica,STHeiTi,Arial,sans-serif;}
+body,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{font-family:'微软雅黑';font-size:14px;font-weight:normal;font-style:normal; line-height: 24px; color:#333; }
+ul,ol,dl{list-style:none;}
+img{border:none;vertical-align:top;}
+a{text-decoration:none;outline:none;color:#333;}
+a:active{outline:0;}
+.clearfix{zoom:1;}
+.clearfix:before,.clearfix:after{content:'';display:table;}
+.clearfix:after{clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+em,i{font-style:normal;}
+b,strong{font-weight:normal;}
+
+
