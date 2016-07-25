@@ -24,7 +24,7 @@
 <!-- 网页不会被缓存 -->
 <!--<meta http-equiv="Pragma" content="no-cache">-->
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
-<meta http-equiv="description" content="诚邀您出席INK（银客）集团战略升级暨C轮融资发布会，共同见证INK新时代">
+<meta name="description" content="诚邀您出席INK（银客）集团战略升级暨C轮融资发布会，共同见证INK新时代">
 <title>实业为本 基业长青</title>
 <style>
 *{margin:0; padding:0;}
@@ -246,44 +246,7 @@ footer img{ width:4.04rem; height:0.4rem; position:absolute; bottom:0.34rem; lef
 <script src="js/index.js"></script>
 </body>
 </html>
-	<script>
 
-var descContent = '诚邀您出席INK（银客）集团战略升级暨C轮融资发布会，共同见证INK新时代';
-function shareFriend() {
-    WeixinJSBridge.invoke('sendAppMessage',{
-        "desc": descContent
-    }, function(res) {
-    });
-}
-function shareTimeline() {
-    WeixinJSBridge.invoke('shareTimeline',{
-        "desc": descContent
-    }, function(res) {
-    });
-}
-function shareWeibo() {
-    WeixinJSBridge.invoke('shareWeibo',{
-        "content": descContent,
-    }, function(res) {
-    });
-}
-// 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
-document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
-    WeixinJSBridge.on('menu:share:appmessage', function(argv){
-        shareFriend();
-    });
-    // 分享到朋友圈
-    WeixinJSBridge.on('menu:share:timeline', function(argv){
-        shareTimeline();
-    });
-    WeixinJSBridge.on('menu:share:weibo', function(argv){
-        shareWeibo();
-    });
-}, false);
-
-
-
-</script>
 
 
 
